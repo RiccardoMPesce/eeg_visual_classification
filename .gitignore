@@ -1,2 +1,5 @@
 # Data folder
 data/
+
+# Generated file
+.DS_Store
