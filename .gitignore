@@ -1,6 +1,7 @@
 # Data folder
 data/
 **/__pycache__/
+**/.ipynb_checkpoints/
 
 # Generated file
 **/.DS_Store
