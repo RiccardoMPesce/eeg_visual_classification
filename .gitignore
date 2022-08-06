@@ -1,5 +1,5 @@
 # Data folder
-**/data/
+data/
 **/__pycache__/
 
 # Generated file
