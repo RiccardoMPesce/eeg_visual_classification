@@ -38,7 +38,7 @@ MODEL_PARAMS = ""
 PRETRAINED_NET = ""
 
 # Training options
-BATCH_SIZE = 440
+BATCH_SIZE = 16
 OPTIMIZER = "Adam"
 LEARNING_RATE = 0.0001
 LEARNING_RATE_DECAY_BY = 0.5
@@ -229,6 +229,7 @@ for epoch in range(1, EPOCHS + 1):
 
             if DEBUG:
                 print(f"Loss computed: {loss}")
+                print(f"Loss device: {loss.device}")
             
             # Compute accuracy
             _, pred = output.data.max(1)
