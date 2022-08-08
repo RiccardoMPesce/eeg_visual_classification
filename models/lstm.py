@@ -50,7 +50,7 @@ class Model(nn.Module):
         lstm_init = (Variable(lstm_init[0]), Variable(lstm_init[1]))
 
         # Forward LSTM and get final state
-        x = self.lstm(x, lstm_init)[0][-1, :, :]
+        x = self.lstm(x, lstm_init)[0][:, -1, :]
 
         # Forward output
         x = F.relu(self.output(x))
